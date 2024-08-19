@@ -9,11 +9,11 @@
 
 ### Miembros:
 - Durigutti, Vittorio | GitHub: https://github.com/vittoriodurigutti
-- Joaquin Zalazar | GitHub: https://github.com/breaakerr
-- 
--  
-- 
-- 
+- Zalazar, Joaquín | GitHub: https://github.com/breaakerr
+- Marquez, José | Github: https://github.com/marquezjose
+- Lujan, Luciano | Github: https://github.com/lucianoilujan
+- Velez, Nahuel | Github: https://github.com/Lucasmurua19
+- Juncos, Lisandro | Github: https://github.com/Lisandro-05
 
 ----------------------
 
