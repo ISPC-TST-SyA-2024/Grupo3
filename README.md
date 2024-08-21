@@ -14,7 +14,7 @@
 - Lujan, Luciano | Github: https://github.com/lucianoilujan
 - Velez, Nahuel | Github: https://github.com/Lucasmurua19
 - Juncos, Lisandro | Github: https://github.com/Lisandro-05
-- Joaquin Garzón | Github:https://github.com/Joacogarzonn
+- Joaquin, Garzón | Github:https://github.com/Joacogarzonn
 
 ----------------------
 
