@@ -36,10 +36,9 @@
 - Soporte DevOps por parte del docente
 
 ## Consignas
-
-"Actividad 1: Dado el esquema de modelización por desarrollos, implementar dispositivos IoT con 8 sistemas IoT diferentes. Esquematizar según triangulo de proceso, conectividad y sensores"
- 
-"Actividad 2: Describir en las implementaciones anteriores los sistemas de medición, actuación y visualización si correspondiera, según el esquema de dispositivos"
+**Semana 1:**
+- "Actividad 1: Dado el esquema de modelización por desarrollos, implementar dispositivos IoT con 8 sistemas IoT diferentes. Esquematizar según triangulo de proceso, conectividad y sensores"
+- "Actividad 2: Describir en las implementaciones anteriores los sistemas de medición, actuación y visualización si correspondiera, según el esquema de dispositivos"
 
 Se generaran los issues correspondientes para que mediante branches los integrantes del equipo realicen la carga de las presentaciones correspondientes a la actividad. 
 Las mismas se encontraran dentro del destino: [D presentacion](/D%20presentacion/)
