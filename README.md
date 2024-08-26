@@ -1,3 +1,5 @@
+<img src="./E recursos/caratula.png">
+
 # Sensores y Actuadores
 
 ## Modulo 1: Estructura de Redes IoT 
