@@ -1,4 +1,4 @@
-<img src="./E recursos/caratula.png">
+<img src="./Trabajo-Practico_N1/E recursos/caratula.png">
 
 # Sensores y Actuadores
 
