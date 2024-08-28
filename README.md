@@ -1,3 +1,5 @@
+![alt text](../Grupo3/E%20assets/Prueba%20ISPC%20portada%202024.jpg)
+
 # Sensores y Actuadores
 
 ## Modulo 1: Estructura de Redes IoT 
