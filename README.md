@@ -1,4 +1,4 @@
-![alt text](../Grupo3/E%20assets/Prueba%20ISPC%20portada%202024.jpg)
+<img src="./E assets/caratula.png">
 
 # Sensores y Actuadores
 
@@ -16,19 +16,20 @@
 - Lujan, Luciano | Github: https://github.com/lucianoilujan
 - Velez, Nahuel | Github: https://github.com/Lucasmurua19
 - Juncos, Lisandro | Github: https://github.com/Lisandro-05
-- Joaquin, Garzón | Github:https://github.com/Joacogarzonn
+- Garzón, Joaquín | Github: https://github.com/Joacogarzonn
 
 ----------------------
 
 ### Índice
 
-### Estructura del Repositorio
+## Estructura del Repositorio
 
 - **A requisitos**: Contiene documentos de requisitos proporcionados por el docente.
 - **B investigacion**: Investigaciones realizadas por los estudiantes.
 - **C prototipo**: Implementaciones específicas de la capa de almacenamiento.
 - **D presentacion**: Incluye grabaciones y bitácoras de las reuniones de Scrum, así como las presentaciones de progreso.
 - **E assets**: Contiene recursos gráficos como imágenes y otros archivos necesarios para la documentación.
+
 
 ## Stack Tecnológico Común
 
@@ -56,8 +57,14 @@ Para obtener más información sobre esta licencia y ver una copia completa de s
 
 ## Contacto y Más Información
 
-- **GitHub del Equipo Scrum**: [Link al GitHub](https://github.com/equipo_scrum)
+- **GitHub del Equipo Scrum**: [Link al GitHub](https://github.com/ISPC-TST-SyA-2024/Grupo3)
 - **Correo de Contacto**: [correo@example.com](mailto:correo@example.com)
 
+## Trabajo práctico N°1
 
 ![README md](https://github.com/user-attachments/assets/c24f476f-6660-442c-9bff-8f9ec52ce9c5)
+
+## Trabajo práctico N°2
+
+![README md](https://github.com/user-attachments/assets/05dee66b-3136-42b5-8b73-9f2b4f8f90e2)
+
