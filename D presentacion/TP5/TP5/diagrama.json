@@ -1,1 +1,43 @@
-// colocar aca el json de Wokwi y cambiar el nombre a "diagram.json"
+{
+    "version": 1,
+    "author": "Luciano Lujan",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-esp32-devkit-v1", "id": "esp1", "top": -4.9, "left": -24.2, "attrs": {} },
+      {
+        "type": "wokwi-dht22",
+        "id": "dht1",
+        "top": -134.1,
+        "left": 4.2,
+        "attrs": { "temperature": "23.5", "humidity": "100" }
+      },
+      { "type": "wokwi-potentiometer", "id": "pot2", "top": -126.1, "left": -192.2, "attrs": {} },
+      { "type": "wokwi-potentiometer", "id": "pot1", "top": -126.1, "left": -115.4, "attrs": {} },
+      { "type": "wokwi-potentiometer", "id": "pot3", "top": -126.1, "left": -269, "attrs": {} },
+      { "type": "wokwi-potentiometer", "id": "pot4", "top": -126.1, "left": -345.8, "attrs": {} },
+      { "type": "wokwi-potentiometer", "id": "pot5", "top": -126.1, "left": -422.6, "attrs": {} }
+    ],
+    "connections": [
+      [ "esp1:TX0", "$serialMonitor:RX", "", [] ],
+      [ "esp1:RX0", "$serialMonitor:TX", "", [] ],
+      [ "dht1:GND", "esp1:GND.1", "black", [ "v0" ] ],
+      [ "pot2:GND", "esp1:GND.2", "black", [ "v0" ] ],
+      [ "pot2:VCC", "esp1:3V3", "red", [ "v0" ] ],
+      [ "dht1:VCC", "esp1:3V3", "red", [ "v0" ] ],
+      [ "pot1:GND", "esp1:GND.2", "black", [ "v0" ] ],
+      [ "pot1:VCC", "esp1:VIN", "red", [ "v0" ] ],
+      [ "pot3:VCC", "esp1:3V3", "red", [ "v211.2", "h8.8" ] ],
+      [ "pot4:VCC", "esp1:3V3", "red", [ "v0" ] ],
+      [ "pot5:VCC", "esp1:3V3", "red", [ "v0" ] ],
+      [ "pot4:GND", "esp1:GND.2", "black", [ "v0" ] ],
+      [ "pot3:GND", "esp1:GND.2", "black", [ "v0" ] ],
+      [ "pot5:GND", "esp1:GND.2", "black", [ "v0" ] ],
+      [ "esp1:D13", "dht1:SDA", "green", [ "h0" ] ],
+      [ "esp1:D32", "pot1:SIG", "green", [ "h0" ] ],
+      [ "esp1:D33", "pot2:SIG", "green", [ "h0" ] ],
+      [ "esp1:D34", "pot3:SIG", "green", [ "h0" ] ],
+      [ "esp1:D35", "pot4:SIG", "green", [ "h0" ] ],
+      [ "esp1:D25", "pot5:SIG", "green", [ "h0" ] ]
+    ],
+    "dependencies": {}
+  }
