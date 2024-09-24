@@ -1,3 +1,24 @@
+<img src="./E assets/caratula.png">
+
+# Sensores y Actuadores
+
+## Modulo 1: Estructura de Redes IoT 
+
+----------------------
+
+### Profesor
+- Ing. Morales Jorge Elias | https://github.com/JorEl057
+
+### Miembros:
+- Durigutti, Vittorio | GitHub: https://github.com/vittoriodurigutti
+- Zalazar, Joaquín | GitHub: https://github.com/breaakerr
+- Marquez, José | Github: https://github.com/marquezjose
+- Lujan, Luciano | Github: https://github.com/lucianoilujan
+- Velez, Nahuel | Github: https://github.com/Lucasmurua19
+- Juncos, Lisandro | Github: https://github.com/Lisandro-05
+- Garzón, Joaquín | Github: https://github.com/Joacogarzonn
+
+
  ## link de proyecto https://wokwi.com/projects/409918402625391617
 # Información general de la estación
  En este informe te cuento cómo funciona nuestra estación meteorológica, que utiliza un sensor DHT22 para medir la temperatura y la humedad del aire. Además, simula otros sensores mediante potenciómetros, lo que me permite obtener información sobre las condiciones meteorológicas como presión, velocidad del viento, dirección del viento, y precipitaciones.
