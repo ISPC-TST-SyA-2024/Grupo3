@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "Luciano Lujan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -76.8, "left": 43.24, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -70.4,
+      "left": 188,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": -148.6,
+      "left": -394.6,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": -62.2,
+      "left": -394.6,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot3",
+      "top": -225.4,
+      "left": -394.6,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot4",
+      "top": 14.6,
+      "left": -394.6,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 134.6, "left": -364.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "v-4.49", "h-28.8", "v23.89" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-16.67", "v162.78" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "h-9.6", "v-57.5", "h-134.55" ] ],
+    [ "lcd1:SCL", "esp:22", "purple", [ "h-19.2", "v-18.9" ] ],
+    [ "pot4:VCC", "pot2:VCC", "red", [ "h-19.2", "v-76.8" ] ],
+    [ "pot2:VCC", "pot1:VCC", "red", [ "h-19.2", "v-86.4" ] ],
+    [ "pot1:VCC", "pot3:VCC", "red", [ "h-19.2", "v-57.6" ] ],
+    [ "esp:34", "pot3:SIG", "green", [ "h-67.05", "v249.6", "h-403.2", "v-402.4" ] ],
+    [ "esp:35", "pot1:SIG", "green", [ "h-57.45", "v249.6", "h-422.4", "v-345.6", "h38.4" ] ],
+    [ "esp:32", "pot2:SIG", "green", [ "h-47.85", "v249.6", "h-441.6", "v-258.4" ] ],
+    [ "esp:33", "pot4:SIG", "green", [ "h-38.25", "v249.6", "h-460.8", "v-191.2" ] ],
+    [ "esp:25", "relay1:IN", "green", [ "v9.6", "h-28.65", "v240", "h-412.8", "v-105.4" ] ],
+    [ "relay1:VCC", "pot4:VCC", "red", [ "h-48", "v-96" ] ],
+    [ "relay1:VCC", "esp:5V", "red", [ "h-48", "v134.4", "h441.6", "v-163.2" ] ],
+    [ "esp:GND.1", "relay1:GND", "black", [ "h-9.45", "v220.8", "h-441.6", "v-134" ] ]
+  ],
+  "dependencies": {}
+}
