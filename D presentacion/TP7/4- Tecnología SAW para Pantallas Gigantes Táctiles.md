@@ -12,6 +12,9 @@ Poniendo un ejemplo practico para entender este tipo de tecnologias, se puede im
 4. **Detección:** Receptores en los bordes detectan la perturbación y la convierten en una señal eléctrica.
 5. **Procesamiento:** El controlador de la pantalla analiza la señal y determina la posición exacta del toque.
 
+![image](https://github.com/user-attachments/assets/d3e73921-2974-4613-ad89-a56b5240c2b0)
+
+
 ## Ventajas que la hacen destacar:
 
 * **Durabilidad excepcional:**
