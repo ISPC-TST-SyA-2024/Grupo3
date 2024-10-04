@@ -2,10 +2,6 @@
 
 Los **displays de 7 segmentos gigantes** son dispositivos de visualización que utilizan LEDs dispuestos en forma de segmentos para mostrar números y, en algunos casos, letras. Estos displays son especialmente útiles en aplicaciones donde se requiere una visualización clara y legible desde una distancia considerable.
 
-[Click para ampliar información.](https://hetpro-store.com/TUTORIALES/display-7-segmentos-anodo-catodo-comun/)
-
-![Display 7 segmentos](https://upload.wikimedia.org/wikipedia/commons/a/ad/Seven_segment_02_Pengo.jpg)
-
 ## Funcionamiento
 
 Un display de 7 segmentos está compuesto por **siete LEDs** dispuestos en forma de figura ocho, más un LED adicional que actúa como punto decimal. Cada LED corresponde a un segmento que puede ser encendido o apagado para formar diferentes números del 0 al 9. Existen dos tipos principales de displays de 7 segmentos:
@@ -57,11 +53,8 @@ En resumen, los displays de 7 segmentos gigantes son componentes versátiles y �
 1.  Conectar el pin común (por ejemplo, el pin 3) a VCC (5V).
 2.  Conectar los pines de los segmentos A-G a resistencias y luego a GND para activar los segmentos deseados.
 
-![ANODO COMUN](https://docs.sunfounder.com/projects/esp32-starter-kit-es/es/latest/_images/segment_anode.png)
-
 #### Display de Cátodo Común
 
 1.  Conectar el pin común (por ejemplo, el pin 3) a GND.
 2.  Conectar los pines de los segmentos A-G a VCC para activar los segmentos deseados.
 
-![CATODO COMUN](https://docs.sunfounder.com/projects/esp32-starter-kit-es/es/latest/_images/segment_cathode.png)
