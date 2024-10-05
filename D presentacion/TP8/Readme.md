@@ -1,4 +1,4 @@
- #informacion General
+ # informacion General
  La idea de este proyecto es crear un sistema que haga el riego automáticamente, sin las preocupaciones  por encender y apagar la bomba de agua. Usamos varios sensores que miden la humedad del suelo y si está lloviendo, todo conectado a un ESP32. Tambien vamos a mostrar los datos en una pantalla LCD para saber qué está pasando en tiempo real. La simulación la hacemos en Wokwi así puedes probar todo antes de montarlo en físico.
 
 ## Componentes 
