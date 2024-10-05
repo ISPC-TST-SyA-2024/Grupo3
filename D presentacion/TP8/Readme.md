@@ -25,4 +25,56 @@ Primero, el sistema va a leer los valores de los sensores de humedad (resistivo 
 El suelo ya tiene suficiente humedad.
 Empieza a llover.
 El tanque de agua está vacío.
-Todo esto se va a poder ver en la pantalla LCD, donde te mostrará los niveles de humedad y el estado del sistema-
+Todo esto se va a poder ver en la pantalla LCD, donde te mostrará los niveles de humedad y el estado del sistema-  
+
+---
+
+# SENSORES Y ACTUADORES
+## Módulo III: Visualizadores – Protocolos – Interfaces de E/S. -
+### Bienvenido a las prácticas de Sensores y Actuadores:  
+
+La modalidad será la siguiente:
+Cada práctica se desarrollará en forma grupal, debiendo subir el
+desarrollo de la misma al repositorio (respetando la estructura de
+monorepositorio) establecido por grupo. Los ejercicios serán
+implementados de forma que a cada integrante le corresponda 1 o más
+tareas (issues); por lo que deberán crear el proyecto correspondiente,
+con la documentación asociada si hiciera falta, y asignar los issues por
+integrante. De esta forma quedara documentada la colaboración de
+cada alumno.  
+
+### **ISPC / Tecnicatura Superior en Telecomunicaciones**  
+
+**Actividad:**
+1) Implementen una simulación de un Sistema de Riego Inteligente en
+Wokwi o Proteus, utilizando ESP32 ó ARDUINO con los siguientes
+sensores y especificaciones: 
+
+	**a. Sensor de humedad del suelo Resistivo. YL-69, HL-69 ó FC-28.**
+	**b. Sensor de humedad del suelo Capacitivo. V1.2.**
+	**c. Sensor de lluvia Resistivo YL-83.**  
+ 
+2) Salida a una pantalla LCD de 16x2 ó 20x4.  
+
+3) Comando automático de una Bomba que encienda o apague el riego, y si
+es posible agregarle una **Electroválvula**. Usar salidas por **relé** u
+**optoacopladas**.  
+
+4) Se considerará el Control de Nivel de un Tanque de almacenamiento de
+agua.  
+
+	- Si llueve, el sistema de Riego no debería activarse, caso de no haber lluvia, el
+sistema debe activarse o nó de acuerdo a la humedad del suelo.  
+
+5) Organizar el repositorio para que sean legibles las carpetas que contengan,
+el orden de las mismas a seguir, como se especifica en el repositorio del
+Proyecto Final (Prof. Gonzalo Vera)  
+
+Referencias modelos:
+- [Modelo 1](https://www.youtube.com/watch?v=cqJ5fXaShP0)
+- [Modelo 2](https://www.youtube.com/watch?v=6ODn1XrysGw)
+- [Modelo 3](https://www.youtube.com/watch?v=mH_h1LS9wMo)
+- [Modelo 4](https://www.youtube.com/watch?v=Wx1Vi0EPhQU)  
+
+
+## 6) Fecha de Entrega: 18/10/24.-
