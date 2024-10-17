@@ -23,3 +23,11 @@ La presentacion de los documentos correspondientes al cumplimiento de la actvida
 **Actividad 6:** Se encuenta en el directorio "TP6"
 La presentacion de los documentos correspondientes al cumplimiento de la actvidad 6 se realizara en formato PDF. Con nombre del documento, De la actividad solicitada. 
 
+**Actividad 7:** Se encuenta en el directorio "TP7"
+La presentacion de los documentos correspondientes al cumplimiento de la actvidad 7 se realizara en formato PDF. Con nombre del documento, De la actividad solicitada. 
+
+**Actividad 8:** Se encuenta en el directorio "TP8"
+La presentacion de los documentos correspondientes al cumplimiento de la actvidad 8 se realizara en formato ABP para que las carpetas que contenga sean legibles.
+
+**Actividad 9:** Se encuenta en el directorio "TP9"
+La presentacion de los documentos correspondientes al cumplimiento de la actvidad 9 se realizara en formato ABP para que las carpetas que contenga sean legibles.
