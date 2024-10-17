@@ -35,13 +35,19 @@
 
 - Control de Versiones: **Git y GitHub**
 - Metodologías Ágiles: **Scrum y Kanban**
+- Simulación: **Proteus y Wokwi*
 - Aprendizaje Basado en Proyectos (ABP)
 - Soporte DevOps por parte del docente
 
 ## Consignas
-**Semana 1:**
-- "Actividad 1: Dado el esquema de modelización por desarrollos, implementar dispositivos IoT con 8 sistemas IoT diferentes. Esquematizar según triangulo de proceso, conectividad y sensores"
-- "Actividad 2: Describir en las implementaciones anteriores los sistemas de medición, actuación y visualización si correspondiera, según el esquema de dispositivos"
+- **Actividad 1:** Dado el esquema de modelización por desarrollos, implementar dispositivos IoT con 8 sistemas IoT diferentes. Esquematizar según triangulo de proceso, conectividad y sensores
+- **Actividad 2:** Describir en las implementaciones anteriores los sistemas de medición, actuación y visualización si correspondiera, según el esquema de dispositivos
+- **Actividad 4:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajo-Practico_N4y5)
+- **Actividad 5:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajo-Practico_N4y5)
+- **Actividad 6:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajp-Practico_N6)
+- **Actividad 7:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajo-Practico_N7)
+- **Actividad 8:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajo-Practico_N8)
+- **Actividad 9:** [Link al repositorio con las consignas.](https://github.com/ISPC-TST-SyA-2024/Trabajo-Practico_N9)
 
 Se generaran los issues correspondientes para que mediante branches los integrantes del equipo realicen la carga de las presentaciones correspondientes a la actividad. 
 Las mismas se encontraran dentro del destino: [D presentacion](/D%20presentacion/)
