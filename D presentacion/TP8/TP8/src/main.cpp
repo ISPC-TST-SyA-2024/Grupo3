@@ -42,18 +42,24 @@ void setup() {
 
 void loop() {
   // Leemos los valores de los potenciómetros (sensores simulados)
-  int valorLluvia = analogRead(lluvia);
-  int valorSueloResistivo = analogRead(sueloResistivo);
-  int valorSueloCapacitivo = analogRead(sueloCapacitivo);
+  int valorLluviaRaw = analogRead(lluvia);
+  int valorSueloResistivoRaw = analogRead(sueloResistivo);
+  int valorSueloCapacitivoRaw = analogRead(sueloCapacitivo);
   int valorTanque = analogRead(tanque);
 
-  // Mostrar en el Monitor Serial
-  Serial.print("Lluvia: ");
+  // Convertimos los valores usando map
+  int valorLluvia = map(valorLluviaRaw, 0, 4095, 0, 100);  // Mapeo a 0-100 mm
+  int valorSueloResistivo = map(valorSueloResistivoRaw, 0, 4095, 0, 100);  // Mapeo a 0-100% humedad
+  int valorSueloCapacitivo = map(valorSueloCapacitivoRaw, 0, 4095, 0, 100);  // Mapeo a 0-100% humedad
+
+  // Mostrar en el Monitor Serial los valores mapeados
+  Serial.print("Lluvia (mm): ");
   Serial.println(valorLluvia);
-  Serial.print("Suelo Resistivo: ");
+  Serial.print("Suelo Resistivo (%): ");
   Serial.println(valorSueloResistivo);
-  Serial.print("Suelo Capacitivo: ");
+  Serial.print("Suelo Capacitivo (%): ");
   Serial.println(valorSueloCapacitivo);
+  
   
   // Determinamos el nivel del tanque
   String nivelTanque;
