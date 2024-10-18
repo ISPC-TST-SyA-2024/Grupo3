@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -29,7 +30,7 @@ void setup() {
   pinMode(releBomba, OUTPUT);
   digitalWrite(releBomba, LOW);  // Apagamos la bomba al inicio
   
-  Serial.begin(115200);
+  Serial.begin(9600);
 
   // Mensaje inicial en la pantalla
   pantalla.setCursor(0, 0);
@@ -90,22 +91,24 @@ void loop() {
   pantalla.print(nivelTanque);
 
   // Lógica para controlar el riego
-  if (valorLluvia > umbralLluvia && 
+  if (valorLluvia < umbralLluvia && 
       (valorSueloResistivo < umbralSueloResistivo || valorSueloCapacitivo < umbralSueloCapacitivo) &&
       nivelTanque != "Bajo") {
     
     // Si no llueve, el suelo está seco (cualquiera de los dos) y el tanque no está "bajo", activamos la bomba
     digitalWrite(releBomba, HIGH);  // Encendemos la bomba
     pantalla.setCursor(0, 1);
-    pantalla.print("Riego: ON ");
-    Serial.println("Riego activado: ON");
+    pantalla.print("Riego: ON    ");
+    Serial.println("Riego activado");
   } else {
     // Si llueve, el suelo está húmedo o el tanque está "bajo", apagamos la bomba
     digitalWrite(releBomba, LOW);   // Apagamos la bomba
     pantalla.setCursor(0, 1);
-    pantalla.print("Riego: OFF");
-    Serial.println("Riego desactivado: OFF");
+    pantalla.print("Riego: OFF    ");
+    Serial.println("Riego desactivado");
   }
+
+  Serial.println("----------------------------");
 
   delay(2000);  // Pausa antes de la siguiente lectura
 }
