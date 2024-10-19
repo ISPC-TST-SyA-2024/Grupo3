@@ -14,13 +14,14 @@ int tanque = 33;             // Simula el nivel del tanque
 // Salida del relé para controlar la bomba
 int releBomba = 25;    
 
-// Umbrales para activar el riego
-int umbralLluvia = 2000;           // Valor para detectar lluvia
-int umbralSueloResistivo = 1500;   // Valor para el suelo resistivo
-int umbralSueloCapacitivo = 1500;  // Valor para el suelo capacitivo
+// Umbrales para activar el riego | Usamos valores comparados a los valores YA mapeados, no analogicos.
+// El tanque mantenemos la comparacion en valor analogico.
+int umbralLluvia = 10;           // Valor para detectar lluvia en mm
+int umbralSueloResistivo = 30;   // Valor para el suelo resistivo en %
+int umbralSueloCapacitivo = 51;  // Valor para el suelo capacitivo en %
 int umbralTanqueBajo = 1000;       // Valor mínimo para tanque "bajo"
 int umbralTanqueMedio = 2000;      // Valor mínimo para tanque "medio"
-int umbralTanqueLleno = 3000;      // Valor para tanque "lleno"
+int umbralTanqueLleno = 3500;      // Valor para tanque "lleno"
 
 void setup() {
   // Iniciar la pantalla LCD y el Monitor Serial
@@ -48,7 +49,7 @@ void loop() {
   int valorTanque = analogRead(tanque);
 
   // Convertimos los valores usando map
-  int valorLluvia = map(valorLluviaRaw, 0, 4095, 0, 100);  // Mapeo a 0-100 mm
+  int valorLluvia = map(valorLluviaRaw, 0, 4095, 0, 50);  // Mapeo a 0-50 mm
   int valorSueloResistivo = map(valorSueloResistivoRaw, 0, 4095, 0, 100);  // Mapeo a 0-100% humedad
   int valorSueloCapacitivo = map(valorSueloCapacitivoRaw, 0, 4095, 0, 100);  // Mapeo a 0-100% humedad
 
@@ -59,7 +60,6 @@ void loop() {
   Serial.println(valorSueloResistivo);
   Serial.print("Suelo Capacitivo (%): ");
   Serial.println(valorSueloCapacitivo);
-  
   
   // Determinamos el nivel del tanque
   String nivelTanque;
@@ -97,24 +97,29 @@ void loop() {
   pantalla.print(nivelTanque);
 
   // Lógica para controlar el riego
-  if (valorLluvia < umbralLluvia && 
-      (valorSueloResistivo < umbralSueloResistivo || valorSueloCapacitivo < umbralSueloCapacitivo) &&
-      nivelTanque != "Bajo") {
-    
-    // Si no llueve, el suelo está seco (cualquiera de los dos) y el tanque no está "bajo", activamos la bomba
-    digitalWrite(releBomba, HIGH);  // Encendemos la bomba
-    pantalla.setCursor(0, 1);
-    pantalla.print("Riego: ON    ");
-    Serial.println("Riego activado");
-  } else {
-    // Si llueve, el suelo está húmedo o el tanque está "bajo", apagamos la bomba
-    digitalWrite(releBomba, LOW);   // Apagamos la bomba
+  // Si el tanque está en nivel "Bajo", no encender el riego
+  if (nivelTanque == "Bajo") {
+    digitalWrite(releBomba, LOW);  // Apagar la bomba
     pantalla.setCursor(0, 1);
     pantalla.print("Riego: OFF    ");
     Serial.println("Riego desactivado");
+  } else {
+    // Si el tanque está en nivel "Medio" o "Lleno", verificar condiciones de lluvia y humedad
+    if ((valorLluvia < umbralLluvia) && 
+        (valorSueloResistivo < umbralSueloResistivo || valorSueloCapacitivo < umbralSueloCapacitivo)) {
+      digitalWrite(releBomba, HIGH);  // Encender la bomba
+      pantalla.setCursor(0, 1);
+      pantalla.print("Riego: ON     ");
+      Serial.println("Riego activado");
+    } else {
+      digitalWrite(releBomba, LOW);   // Apagar la bomba
+      pantalla.setCursor(0, 1);
+      pantalla.print("Riego: OFF    ");
+      Serial.println("Riego desactivado");
+    }
   }
 
   Serial.println("----------------------------");
 
-  delay(2000);  // Pausa antes de la siguiente lectura
+  delay(4000);  // Pausa antes de la siguiente lectura
 }
