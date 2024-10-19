@@ -96,10 +96,13 @@ void loop() {
   pantalla.print("Tanque: ");
   pantalla.print(nivelTanque);
 
+    delay(2000);  // Pausa para ver el mensaje
+
   // Lógica para controlar el riego
   // Si el tanque está en nivel "Bajo", no encender el riego
   if (nivelTanque == "Bajo") {
     digitalWrite(releBomba, LOW);  // Apagar la bomba
+    pantalla.clear();
     pantalla.setCursor(0, 1);
     pantalla.print("Riego: OFF    ");
     Serial.println("Riego desactivado");
@@ -107,12 +110,14 @@ void loop() {
     // Si el tanque está en nivel "Medio" o "Lleno", verificar condiciones de lluvia y humedad
     if ((valorLluvia < umbralLluvia) && 
         (valorSueloResistivo < umbralSueloResistivo || valorSueloCapacitivo < umbralSueloCapacitivo)) {
-      digitalWrite(releBomba, HIGH);  // Encender la bomba
+      digitalWrite(releBomba, HIGH); // Encender la bomba
+      pantalla.clear();
       pantalla.setCursor(0, 1);
       pantalla.print("Riego: ON     ");
       Serial.println("Riego activado");
     } else {
       digitalWrite(releBomba, LOW);   // Apagar la bomba
+      pantalla.clear();
       pantalla.setCursor(0, 1);
       pantalla.print("Riego: OFF    ");
       Serial.println("Riego desactivado");
