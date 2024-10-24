@@ -6,3 +6,6 @@ Necesitarás compilar el código en tu IDE y generar un archivo ```.hex``` o ```
 - Haz clic derecho en el ESP32 dentro del esquema de Proteus.
 - Selecciona la opción "Edit Properties" o "Edit Component".
 - Carga el archivo ```.hex``` correspondiente al código que compilaron en tu IDE.
+
+**NOTA**
+NO funciono el uso de las librerias correspondientes a ESP32. Por lo que se usa un modulo tambien de libreria ARDUINO NANO

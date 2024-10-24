@@ -1,0 +1,10 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "C:\\Users\\Vitto Dell\\AppData\\Local\\Arduino15\\libraries",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.warn_data_percentage=75",
+  "fqbn": "arduino:avr:nano:cpu=atmega328",
+  "hardwareFolders": "c:\\Users\\Vitto Dell\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "d:\\Program Files\\Arduino IDE\\libraries",
+  "sketchLocation": "C:\\Users\\Vitto Dell\\RX"
+}
