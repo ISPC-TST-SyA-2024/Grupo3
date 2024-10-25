@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Joaquin Gustavo Zalazar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "tx", "top": -28.2, "left": -106.2, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "rx", "top": -28.2, "left": 277.8, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 246.4,
+      "left": 216.8,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "tx:1", "rx:0", "blue", [ "v-105.6", "h388.2" ] ],
+    [ "rx:GND.2", "lcd1:GND", "black", [ "v19.1", "h-245.7", "v96", "h9.6" ] ],
+    [ "tx:GND.2", "lcd1:GND", "black", [ "v19.1", "h138.3", "v48" ] ],
+    [ "tx:5V", "lcd1:VCC", "red", [ "v28.7", "h138.2", "v96" ] ],
+    [ "rx:5V", "lcd1:VCC", "red", [ "v9.5", "h-245.8", "v28.8" ] ],
+    [ "tx:A4", "lcd1:SDA", "green", [ "v9.5", "h42.6", "v124.8" ] ],
+    [ "rx:A4", "lcd1:SDA", "green", [ "v57.5", "h-341.4", "v76.8" ] ],
+    [ "tx:A5", "lcd1:SCL", "purple", [ "v-0.1", "h23.5", "v144" ] ],
+    [ "rx:A5", "lcd1:SCL", "purple", [ "v67.1", "h-360.5", "v76.8" ] ]
+  ],
+  "dependencies": {}
+}
